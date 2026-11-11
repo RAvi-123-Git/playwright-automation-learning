@@ -14,3 +14,23 @@ if (marks >= 35) {
 } else {
     console.log("Fail");
 }
+
+let loginStatus = true;
+
+if (loginStatus === true) {
+    console.log("Login test passed");
+} else {
+    console.log("Login test failed");
+}
+
+let testCases = [
+    "Login Test",
+    "Search Test",
+    "Registration Test",
+    "Logout Test",
+    "Profile Test"
+];
+
+for (let test of testCases) {
+    console.log(`Executing: ${test}`);
+}
