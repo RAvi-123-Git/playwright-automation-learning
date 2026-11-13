@@ -1,6 +1,6 @@
+874298;
 
-let number = -2532487293874298;
-
+let number = -2532487293
 if (number > 0) {
     console.log("Positive number");
 } else if (number < 0) {
