@@ -1,3 +1,4 @@
+{
 class User {
     constructor(name, company) {
         this.name = name;
@@ -14,8 +15,9 @@ let user2 = new User("John", "Accenture");
 
 user1.displayName();
 user2.displayName();
+}
 
-
+{
 class User {
     login() {
         console.log("User logged in");
@@ -32,9 +34,10 @@ let admin = new Admin();
 
 admin.login();
 admin.dashboard();
+}
 
 
-
+{
 class User {
 
     constructor(name, email, role) {
@@ -53,4 +56,4 @@ class User {
 let user1 = new User("Ravi", "ravi@gmail.com", "QA Engineer");
 
 user1.displayUser();
-
+}
