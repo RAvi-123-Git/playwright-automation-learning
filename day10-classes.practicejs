@@ -1,0 +1,34 @@
+class User {
+    constructor(name, company, experience) {
+        this.name = name;
+        this.company = company;
+        this.experience = experience;
+    }
+
+    displayUser() {
+        console.log("Name:", this.name);
+        console.log("Company:", this.company);
+        console.log("Experience:", this.experience);
+    }
+}
+
+const user1 = new User("Ravi", "Accenture", 3);
+const user2 = new User("Tester", "Infor", 2);
+
+user1.displayUser();
+user2.displayUser();
+
+class LoginPage {
+    constructor(page) {
+        this.page = page;
+        this.username = page.locator("#username");
+        this.password = page.locator("#password");
+        this.loginButton = page.locator("#login");
+    }
+
+    async login(username, password) {
+        await this.username.fill(username);
+        await this.password.fill(password);
+        await this.loginButton.click();
+    }
+}
